@@ -27,3 +27,13 @@ The four most common transformer types are:
 An Estimator is a concept of learning from the data before transforming it. For example, to perform a Standard Scaler transformation, we first must learn from the data what the mean and standard deviation values are. Spark Estimators are implemented within the `.fit()` method. 
 
 ![alt text](./static/slide3_estimator.jpg "Estimator")
+
+### Pipeline
+
+A Pipeline is a sequential assembly of transformers and often a final Estimator (i.e. Linear Regression). The main purposes of a pipeline are:
+* Well-organized workflow
+* Cross-validation and parameter tuning of different inputs
+* Deploying the sequence of transformers to production (as we'll cover later)
+
+![alt text](./static/slide4_pipeline.jpg "Pipeline")
+
