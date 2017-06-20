@@ -37,3 +37,8 @@ A Pipeline is a sequential assembly of transformers and often a final Estimator 
 
 ![alt text](./static/slide4_pipeline.jpg "Pipeline")
 
+### Parameters
+
+The Parameters API allows the user to specify settings for a given transformer. The more notable feature of Spark is the `ParamGridBuilder` which allows you to specify an array of parameters to test your pipeline and the final estimator (i.e. Linear Regression) with.
+
+![alt text](./static/slide5_parameters.jpg "Parameters")
