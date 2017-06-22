@@ -1,7 +1,7 @@
 from subprocess import call
 import os
 
-sparkmagic_config = """"
+sparkmagic_config = """
 {
   "kernel_python_credentials" : {
     "username": "",
