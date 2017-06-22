@@ -68,7 +68,11 @@ ary is configured correctly.\nc) Restart the kernel.",
 }
 """
 os.mkdir("/home/jupyter/.sparkmagic")
+os.mkdir("/root/.sparkmagic")
 sparkmagic_config_file = open("/home/jupyter/.sparkmagic/config.json", "w")
+sparkmagic_config_file.write(sparkmagic_config)
+sparkmagic_config_file.close()
+sparkmagic_config_file = open("/root/.sparkmagic/config.json", "w")
 sparkmagic_config_file.write(sparkmagic_config)
 sparkmagic_config_file.close()
 call(["jupyter", "notebook", "--generate-config"])
