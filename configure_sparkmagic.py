@@ -80,3 +80,5 @@ call(["jupyter", "nbextension", "enable", "--py", "--sys-prefix", "widgetsnbexte
 call(["jupyter", "serverextension", "enable", "--py", "sparkmagic"])
 call(["jupyter-kernelspec", "install", "/usr/local/lib/python3.5/dist-packages/sparkmagic/kernels/sparkkernel"])
 call(["jupyter-kernelspec", "install", "/usr/local/lib/python2.7/dist-packages/sparkmagic/kernels/sparkkernel"])
+call(["apt-get", "update"])
+call(["apt-get", "install", "jq"])
