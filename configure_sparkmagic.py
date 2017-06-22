@@ -1,7 +1,7 @@
 from subprocess import call
 import os
 
-sparkmagic_config = """
+sparkmagic_config = r"""
 {
   "kernel_python_credentials" : {
     "username": "",
@@ -44,9 +44,7 @@ sparkmagic_config = """
   "statement_sleep_seconds": 2,
   "livy_session_startup_timeout_seconds": 60,
 
-  "fatal_error_suggestion": "The code failed because of a fatal error:\n\t{}.\n\nSome things to try:\na) Make sure Spark has enough
-available resources for Jupyter to create a Spark context.\nb) Contact your Jupyter administrator to make sure the Spark magics libr
-ary is configured correctly.\nc) Restart the kernel.",
+  "fatal_error_suggestion": "The code failed because of a fatal error:{}",
 
   "ignore_ssl_errors": false,
 
